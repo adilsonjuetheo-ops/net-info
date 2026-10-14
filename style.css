@@ -181,3 +181,29 @@ footer>div>a.footer-subscriber{display:inline-flex;align-items:center;min-height
 .footer-subscriber:hover{text-decoration:underline}
 @media(min-width:1001px) and (max-width:1279px){nav{gap:12px;font-size:12px}nav .subscriber-link{padding:10px}.small{padding:13px 14px}}
 @media(max-width:1000px){nav .subscriber-link{justify-content:flex-start;padding:14px}}
+/* Aplicativos da Central do Assinante */
+.apps{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:8%;align-items:center;background:linear-gradient(120deg,#0d4678,#08315b)}
+.apps-copy>p:not(.eyebrow){max-width:520px;color:var(--muted);font-size:15px;margin:26px 0}
+.app-downloads{display:flex;flex-wrap:wrap;gap:14px;margin:28px 0}
+.store-button{display:flex;align-items:center;gap:14px;border:1px solid #85dfff65;border-radius:10px;padding:16px 18px;background:#06294e;color:#fff;min-height:76px;transition:background .2s,transform .2s}
+.store-button:hover{background:#075189;transform:translateY(-3px)}
+.store-button svg{width:29px;height:29px;flex-shrink:0;color:var(--cyan)}
+.store-button small{display:block;font-size:9px;letter-spacing:1px;color:#b8d9ef}
+.store-button strong{display:block;font-size:20px;letter-spacing:-.4px;margin-top:3px}
+.store-arrow{margin-left:12px;color:var(--cyan)}
+.apps-browser-link{display:inline-block;color:var(--cyan);font-size:12px;line-height:1.8;text-underline-offset:4px}
+.apps-browser-link:hover{text-decoration:underline}
+.app-illustration{position:relative;display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:450px;background:radial-gradient(ellipse at center,#0488cb45,transparent 70%)}
+.phone{position:relative;width:244px;height:390px;border:7px solid #28618a;border-radius:36px;padding:42px 20px 28px;background:linear-gradient(150deg,#084e7d,#041f3e);box-shadow:0 24px 60px #01162e65;transform:rotate(5deg)}
+.phone-speaker{position:absolute;top:15px;left:50%;transform:translateX(-50%);width:55px;height:5px;border-radius:10px;background:#72b1d980}
+.phone img{width:100%;height:80px;object-fit:contain;display:block}
+.phone-kicker{display:block;text-align:center;font-size:7px;letter-spacing:1px;color:#89dfff;margin:15px 0 22px}
+.phone-tile{display:flex;align-items:center;gap:10px;font-size:10px;padding:14px 9px;border-radius:8px;background:#0e5d8950;border:1px solid #84d9ff30;margin-bottom:10px}
+.phone-tile span{color:var(--cyan);font-size:20px}
+.phone-line{height:5px;border-radius:5px;background:#79bbda30;width:85%;margin:17px auto 0}
+.phone-line.short{width:55%;margin-top:9px}
+.phone-home{position:absolute;bottom:12px;left:50%;transform:translateX(-50%);width:65px;height:4px;border-radius:5px;background:#ccefff80}
+.app-caption{font-size:9px;letter-spacing:2px;color:#91d7f3;margin-top:24px}
+@media(min-width:1001px) and (max-width:1400px){nav{gap:10px;font-size:11px}nav .subscriber-link{padding:10px}.small{padding:13px 12px}}
+@media(max-width:1000px){.apps{grid-template-columns:minmax(0,1fr);gap:30px}.app-illustration{min-height:400px}}
+@media(max-width:599px){.app-downloads{flex-direction:column}.store-button{width:100%;justify-content:flex-start}.store-arrow{margin-left:auto}.app-illustration{min-height:380px}.phone{width:225px;height:365px}.apps-browser-link{font-size:13px}.apps-copy>p:not(.eyebrow){font-size:14px}}
