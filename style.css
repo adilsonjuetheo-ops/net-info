@@ -264,3 +264,11 @@ nav .nav-instagram:hover{color:#ffd3e6}
 @media(min-width:1280px) and (max-width:1400px){.plan-grid{gap:14px}.plan{padding:28px 15px 20px}.plan ul{margin-left:-15px;margin-right:-15px;padding-left:15px;padding-right:15px}.plan h3{font-size:38px}.price{font-size:35px}}
 @media(max-width:1279px){.plan h3{font-size:48px}.plan ul{font-size:12px}}
 @media(max-width:599px){.plan-grid{gap:32px}.plan{padding:30px 24px 24px}.plan h3{font-size:54px}.plan-description{min-height:0;font-size:13px}.plan ul{margin-left:-24px;margin-right:-24px;padding:24px 24px 4px;font-size:13px}.plan .button{font-size:13px;min-height:48px}.price{font-size:44px}.plan-label{font-size:10px}.speed-bars{height:22px}}
+/* Cores dos indicadores conforme a referência enviada */
+.plan:nth-child(1){--meter-end:#f17448;--meter-color:#f17448}
+.plan:nth-child(2){--meter-end:#e9a52a;--meter-color:#e9a52a}
+.plan:nth-child(3){--meter-end:#e0bf26;--meter-color:#e0bf26}
+.plan:nth-child(4){--meter-end:#a4c83e;--meter-color:#a4c83e}
+.plan:nth-child(5){--meter-end:#63ba38;--meter-color:#63ba38}
+.plan .speed-meter{color:var(--meter-color)}
+.plan .speed-bars,.featured .speed-bars{background:linear-gradient(90deg,#ed634b 0%,var(--meter-end) var(--speed),#dce2e8 var(--speed));mask-image:repeating-linear-gradient(90deg,#000 0 3px,transparent 3px 6px)}
