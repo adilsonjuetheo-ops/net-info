@@ -207,3 +207,18 @@ footer>div>a.footer-subscriber{display:inline-flex;align-items:center;min-height
 @media(min-width:1001px) and (max-width:1400px){nav{gap:10px;font-size:11px}nav .subscriber-link{padding:10px}.small{padding:13px 12px}}
 @media(max-width:1000px){.apps{grid-template-columns:minmax(0,1fr);gap:30px}.app-illustration{min-height:400px}}
 @media(max-width:599px){.app-downloads{flex-direction:column}.store-button{width:100%;justify-content:flex-start}.store-arrow{margin-left:auto}.app-illustration{min-height:380px}.phone{width:225px;height:365px}.apps-browser-link{font-size:13px}.apps-copy>p:not(.eyebrow){font-size:14px}}
+/* Ilustração de fibra: luz, profundidade e movimento */
+.connection-art{isolation:isolate;min-height:370px}
+.connected-home{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;animation:connected-home-drift 12s ease-in-out infinite;transform-origin:center}
+.connection-art::before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(0deg,#041b3ee6,transparent 28%),linear-gradient(180deg,#041b3e40,transparent 25%);pointer-events:none}
+.connection-art::after{content:"";position:absolute;inset:0;z-index:1;background:radial-gradient(ellipse at 50% 62%,#5bdfff22,transparent 60%);animation:fiber-glow 5s ease-in-out infinite;pointer-events:none}
+.connection-art .fiber-chip{z-index:3;background:#082f57bb;backdrop-filter:blur(10px);box-shadow:0 0 25px #5ddfff22}
+.connection-art .art-label{z-index:3;color:#d6f5ff;font-weight:700}
+.fiber-spark{position:absolute;z-index:2;width:5px;height:5px;border-radius:50%;background:#b5f4ff;box-shadow:0 0 12px 3px #52d7ff80;pointer-events:none;animation:fiber-spark-rise 7s ease-in-out infinite}
+.fiber-spark.one{left:18%;top:69%;animation-delay:-2s}
+.fiber-spark.two{left:75%;top:72%;animation-delay:-4s}
+.fiber-spark.three{left:56%;top:47%;animation-delay:-1s}
+@keyframes connected-home-drift{0%,100%{transform:scale(1.03) translateY(0)}50%{transform:scale(1.08) translateY(-6px)}}
+@keyframes fiber-glow{0%,100%{opacity:.35}50%{opacity:1}}
+@keyframes fiber-spark-rise{0%,100%{transform:translateY(0);opacity:0}25%{opacity:.9}75%{transform:translateY(-60px);opacity:.5}}
+@media(max-width:599px){.connection-art{min-height:330px}.connection-art .fiber-chip{width:74px;height:74px;right:18px;top:18px;font-size:13px}.connection-art .art-label{bottom:24px;font-size:8px}}
