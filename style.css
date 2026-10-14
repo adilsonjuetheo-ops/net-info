@@ -232,3 +232,9 @@ footer>div>a.instagram-button:hover{background:#115785;transform:translateY(-2px
 .hero-instagram svg{width:22px;height:22px;flex-shrink:0;color:#87e5ff}
 .hero-instagram:hover{background:#145d89}
 @media(max-width:599px){.hero-instagram{padding:12px 14px}}
+/* Instagram com as cores da plataforma */
+nav .nav-instagram{display:inline-flex;align-items:center;gap:9px;min-height:44px;font-weight:800;color:#fff;white-space:nowrap}
+.nav-instagram svg,.hero-instagram svg,.instagram-button svg{width:30px;height:30px;padding:5px;border-radius:8px;color:#fff;background:radial-gradient(circle at 30% 105%,#feda75 0%,#fa7e1e 28%,#d62976 55%,#962fbf 78%,#4f5bd5 100%);flex-shrink:0}
+nav .nav-instagram:hover{color:#ffd3e6}
+@media(min-width:1001px) and (max-width:1499px){header{padding-left:4%;padding-right:4%}header .brand img{width:170px}nav{gap:10px;font-size:11px}nav .subscriber-link{padding:10px}.small{padding:13px 12px}}
+@media(max-width:1150px){.menu{display:flex;align-items:center;justify-content:center;border:0;background:transparent;color:#eef9ff;font-size:26px}header{height:88px}nav{display:none;position:absolute;top:88px;left:0;right:0;padding:20px 6%;flex-direction:column;align-items:stretch;gap:8px;background:#063564;max-height:calc(100dvh - 88px);overflow-y:auto;box-shadow:0 10px 15px #00172b20}nav.open{display:flex}nav>a{display:flex;align-items:center;min-height:48px}nav .subscriber-link{justify-content:flex-start}nav .nav-instagram{padding:6px 0}html{scroll-padding-top:102px}}

@@ -4,4 +4,5 @@ if('IntersectionObserver' in window&&!reduced.matches){const observer=new Inters
 document.querySelector('#coverage-form').addEventListener('submit',e=>{e.preventDefault();const address=document.querySelector('#address').value.trim();if(!address)return;const url='https://wa.me/5538998286844?text='+encodeURIComponent('Olá, NET-INFO! Gostaria de consultar a cobertura para: '+address+'.');const link=document.querySelector('#coverage-link');link.href=url;link.hidden=false;window.open(url,'_blank','noopener,noreferrer');});document.querySelector('#year').textContent=new Date().getFullYear();document.querySelectorAll('[data-plan]').forEach(a=>{a.target='_blank';a.rel='noopener';});
 // Fechar o menu no teclado e ao voltar para o layout de desktop.
 document.addEventListener('keydown',event=>{if(event.key==='Escape'&&nav.classList.contains('open')){nav.classList.remove('open');menu.setAttribute('aria-expanded','false');menu.focus();}});
-matchMedia('(min-width: 1001px)').addEventListener('change',event=>{if(event.matches){nav.classList.remove('open');menu.setAttribute('aria-expanded','false');}});
+matchMedia('(min-width: 1151px)').addEventListener('change',event=>{if(event.matches){nav.classList.remove('open');menu.setAttribute('aria-expanded','false');}});
+
