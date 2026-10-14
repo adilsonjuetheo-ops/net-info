@@ -228,3 +228,7 @@ footer>div>a.instagram-button{display:inline-flex;align-items:center;gap:12px;mi
 .instagram-button strong{display:block;margin-top:4px;font-size:13px;color:#87e5ff;overflow-wrap:anywhere}
 footer>div>a.instagram-button:hover{background:#115785;transform:translateY(-2px)}
 @media(max-width:599px){footer>div>a.instagram-button{max-width:100%;padding:12px;gap:10px}}
+.hero-instagram{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:12px 18px;border:1px solid #87e5ff80;border-radius:7px;background:#0b3e69a0;color:#eaf8ff;font-size:13px;font-weight:800;transition:background .2s}
+.hero-instagram svg{width:22px;height:22px;flex-shrink:0;color:#87e5ff}
+.hero-instagram:hover{background:#145d89}
+@media(max-width:599px){.hero-instagram{padding:12px 14px}}
