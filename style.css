@@ -238,3 +238,29 @@ nav .nav-instagram{display:inline-flex;align-items:center;gap:9px;min-height:44p
 nav .nav-instagram:hover{color:#ffd3e6}
 @media(min-width:1001px) and (max-width:1499px){header{padding-left:4%;padding-right:4%}header .brand img{width:170px}nav{gap:10px;font-size:11px}nav .subscriber-link{padding:10px}.small{padding:13px 12px}}
 @media(max-width:1150px){.menu{display:flex;align-items:center;justify-content:center;border:0;background:transparent;color:#eef9ff;font-size:26px}header{height:88px}nav{display:none;position:absolute;top:88px;left:0;right:0;padding:20px 6%;flex-direction:column;align-items:stretch;gap:8px;background:#063564;max-height:calc(100dvh - 88px);overflow-y:auto;box-shadow:0 10px 15px #00172b20}nav.open{display:flex}nav>a{display:flex;align-items:center;min-height:48px}nav .subscriber-link{justify-content:flex-start}nav .nav-instagram{padding:6px 0}html{scroll-padding-top:102px}}
+/* Planos inspirados na referência: medidor, benefícios e acabamento arredondado */
+.plan-grid{gap:22px;align-items:stretch}
+.plan{border-radius:24px;padding:28px 20px 22px;box-shadow:0 8px 0 #041e3e65,0 16px 35px #00192d25;border-color:#81caff40}
+.plan-label{align-self:flex-start;margin-bottom:18px;padding:7px 10px;border:1px solid #96d6ff35;border-radius:30px;font-size:9px;letter-spacing:.5px;background:#ffffff08}
+.plan h3{font-size:44px}
+.plan-description{margin:10px 0 20px;min-height:40px;line-height:1.6}
+.price{order:0;font-size:40px}
+.speed-meter{display:flex;align-items:center;gap:10px;margin:18px 0 16px;color:#87e5ff}
+.speed-meter svg{width:29px;height:24px;flex-shrink:0}
+.speed-bars{height:18px;flex:1;border-radius:3px;background:repeating-linear-gradient(90deg,transparent 0 3px,#123f6500 3px 6px),linear-gradient(90deg,#34c8f5 var(--speed),#ffffff15 var(--speed));mask-image:repeating-linear-gradient(90deg,#000 0 3px,transparent 3px 6px)}
+.plan:nth-child(1){--speed:25%}.plan:nth-child(2){--speed:40%}.plan:nth-child(3){--speed:55%}.plan:nth-child(4){--speed:70%}.plan:nth-child(5){--speed:100%}
+.plan ul{order:2;margin:20px -20px 0;padding:22px 20px 6px;border-top:1px solid #91d7ff35;font-size:11px;line-height:1.6;flex:1}
+.plan li{position:relative;padding-left:25px}
+.plan li+li{margin-top:14px}
+.plan li:before{position:absolute;left:0;top:0;display:flex;align-items:center;justify-content:center;width:18px;height:18px;margin:0;border-radius:50%;background:#83dcff1c;border:1px solid #83dcff35;font-size:10px}
+.plan .button{order:1;margin-top:0;border-radius:30px;min-height:46px;font-size:11px;background:#0b77ad;border-color:#70d5ff55;color:white}
+.plan .button:hover{background:#0793c9}
+.featured{box-shadow:0 8px 0 #023675,0 20px 45px #00aaff25;border-color:#91eaff}
+.featured .button{background:#87e5ff;color:#062b55;border-color:#87e5ff}
+.featured .button:hover{background:#b7f1ff}
+.featured-tag{border-radius:30px;top:-16px;padding:9px;font-size:9px}
+.featured .plan-label{background:#ffffff12;border-color:#baf0ff65}
+.featured .speed-bars{background:linear-gradient(90deg,#91f0ff var(--speed),#ffffff25 var(--speed))}
+@media(min-width:1280px) and (max-width:1400px){.plan-grid{gap:14px}.plan{padding:28px 15px 20px}.plan ul{margin-left:-15px;margin-right:-15px;padding-left:15px;padding-right:15px}.plan h3{font-size:38px}.price{font-size:35px}}
+@media(max-width:1279px){.plan h3{font-size:48px}.plan ul{font-size:12px}}
+@media(max-width:599px){.plan-grid{gap:32px}.plan{padding:30px 24px 24px}.plan h3{font-size:54px}.plan-description{min-height:0;font-size:13px}.plan ul{margin-left:-24px;margin-right:-24px;padding:24px 24px 4px;font-size:13px}.plan .button{font-size:13px;min-height:48px}.price{font-size:44px}.plan-label{font-size:10px}.speed-bars{height:22px}}
