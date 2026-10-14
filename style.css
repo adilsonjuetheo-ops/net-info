@@ -174,3 +174,10 @@ footer .brand img{width:240px;height:106px}
 @media(max-width:1000px){header{height:88px}.brand img{width:176px;height:76px}.menu{color:#eef9ff}nav{top:88px;background:#063564;max-height:calc(100dvh - 88px);border-bottom:1px solid #69cfff40}html{scroll-padding-top:102px}}
 @media(max-width:599px){.brand img{width:160px;height:70px}.location{border-color:#8bd8ff35}footer .brand img{width:215px;height:95px}}
 @media(max-height:500px) and (orientation:landscape){header{height:72px}.brand img{height:62px}nav{top:72px;max-height:calc(100dvh - 72px)}}
+/* Acesso dos clientes à Central do Assinante */
+nav .subscriber-link{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:10px 14px;border:1px solid #87e5ff80;border-radius:7px;color:#b1efff;white-space:nowrap;transition:background .2s,border-color .2s}
+nav .subscriber-link:hover{background:#87e5ff15;border-color:#87e5ff}
+footer>div>a.footer-subscriber{display:inline-flex;align-items:center;min-height:44px;margin-top:8px;font-size:13px;color:#87e5ff;text-underline-offset:4px}
+.footer-subscriber:hover{text-decoration:underline}
+@media(min-width:1001px) and (max-width:1279px){nav{gap:12px;font-size:12px}nav .subscriber-link{padding:10px}.small{padding:13px 14px}}
+@media(max-width:1000px){nav .subscriber-link{justify-content:flex-start;padding:14px}}
