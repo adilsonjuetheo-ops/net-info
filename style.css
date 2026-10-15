@@ -278,3 +278,9 @@ nav .nav-instagram:hover{color:#ffd3e6}
 .plan li::before{content:none;display:none}
 .plan li .benefit-icon{width:18px;height:18px;flex:0 0 18px;color:#b7edff;margin-top:1px}
 .plan li span{min-width:0}
+/* Contratação pelo WhatsApp ao final de cada plano */
+.plan .button,.plan.featured .button{order:3;align-self:flex-start;display:inline-flex;align-items:center;justify-content:center;width:auto;min-width:132px;min-height:44px;gap:8px;margin-top:20px;padding:12px 18px;border:0;border-radius:6px;background:#22c43b;color:#fff;font-size:12px;font-weight:500;letter-spacing:0}
+.plan .button:hover,.plan.featured .button:hover{background:#18a82f;color:#fff}
+.plan-whatsapp{display:block;width:18px;height:18px;flex-shrink:0}
+.plan ul{flex:1}
+@media(max-width:599px){.plan .button,.plan.featured .button{min-height:46px;font-size:13px;padding:13px 20px}}
