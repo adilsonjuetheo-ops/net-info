@@ -284,3 +284,15 @@ nav .nav-instagram:hover{color:#ffd3e6}
 .plan-whatsapp{display:block;width:18px;height:18px;flex-shrink:0}
 .plan ul{flex:1}
 @media(max-width:599px){.plan .button,.plan.featured .button{min-height:46px;font-size:13px;padding:13px 20px}}
+/* Interação dos cards ao passar o mouse */
+@media(hover:hover) and (pointer:fine){
+ .plan{transition:transform .3s ease,box-shadow .3s ease,border-color .3s ease}
+ .plan .speed-bars{transition:filter .3s ease,transform .3s ease;transform-origin:left center}
+ .plan .button{transition:background .2s ease,transform .25s ease,box-shadow .25s ease}
+ .plan:hover,.plan:focus-within{transform:translateY(-10px);border-color:#8ae8ff;box-shadow:0 10px 0 #041e3e45,0 22px 45px #001a3b55,0 0 24px #35cfff22}
+ .plan.featured:hover,.plan.featured:focus-within{box-shadow:0 10px 0 #02367570,0 24px 48px #001a3b55,0 0 30px #75eaff40}
+ .plan:hover .speed-bars,.plan:focus-within .speed-bars{filter:brightness(1.25);animation:plan-speed-pulse 1.6s ease-in-out infinite}
+ .plan:hover .button,.plan:focus-within .button{box-shadow:0 5px 18px #18c43b30}
+}
+@keyframes plan-speed-pulse{0%,100%{transform:scaleY(1)}50%{transform:scaleY(1.2)}}
+@media(prefers-reduced-motion:reduce){.plan:hover,.plan:focus-within{transform:none}.plan .speed-bars{animation:none!important}}
