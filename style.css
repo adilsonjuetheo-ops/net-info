@@ -325,5 +325,5 @@ nav .nav-instagram:hover{color:#ffd3e6}
 .streaming-icon{display:flex;align-items:center;justify-content:center;min-width:0;height:48px;border-radius:10px;background:#061d38;border:1px solid #91d7ff25}
 .streaming-icon img{display:block;width:32px;height:32px;object-fit:contain;border-radius:6px}
 .streaming-netflix img{filter:invert(19%) sepia(99%) saturate(5219%) hue-rotate(346deg) brightness(85%) contrast(109%)}
-.streaming-amazonprime img,.streaming-appletv img{filter:invert(1);border-radius:0}
-@media(min-width:600px) and (max-width:1279px){.plan-streaming{grid-template-columns:repeat(6,minmax(0,1fr))}}
+.streaming-amazonprime img,.streaming-appletv img,.streaming-hbo img{filter:invert(1);border-radius:0}
+@media(min-width:600px) and (max-width:1279px){.plan-streaming{grid-template-columns:repeat(3,minmax(0,1fr))}}
