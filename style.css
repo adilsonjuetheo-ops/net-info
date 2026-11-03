@@ -319,3 +319,11 @@ nav .nav-instagram:hover{color:#ffd3e6}
 .community-note .button{flex-shrink:0;min-height:48px;font-size:12px;gap:0}
 @media(max-width:1000px){.community-grid{grid-template-columns:minmax(0,1fr)}.community-note{align-items:flex-start;flex-direction:column}.community-count{margin-left:auto}}
 @media(max-width:599px){.community-group-heading{padding:22px 18px;gap:12px}.community-group-heading h3{font-size:22px}.community-group-heading p{font-size:8px}.community-count{width:100%;padding-left:56px;margin-top:-2px}.community-list{padding:4px 18px 10px}.community-list li{gap:9px;flex-wrap:wrap}.community-list li>span{font-size:13px}.community-list small{font-size:8px;padding:5px 7px}.community-note{padding:20px}.community-note .button{width:100%}}
+
+/* Referências de streaming nos planos a partir de R$ 89,90. */
+.plan-streaming{order:2;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin-top:20px;padding-top:16px;border-top:1px solid #91d7ff35}
+.streaming-icon{display:flex;align-items:center;justify-content:center;min-width:0;height:48px;border-radius:10px;background:#061d38;border:1px solid #91d7ff25}
+.streaming-icon img{display:block;width:32px;height:32px;object-fit:contain;border-radius:6px}
+.streaming-netflix img{filter:invert(19%) sepia(99%) saturate(5219%) hue-rotate(346deg) brightness(85%) contrast(109%)}
+.streaming-amazonprime img,.streaming-appletv img{filter:invert(1);border-radius:0}
+@media(min-width:600px) and (max-width:1279px){.plan-streaming{grid-template-columns:repeat(6,minmax(0,1fr))}}
